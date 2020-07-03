@@ -1,0 +1,28 @@
+{
+    "name": "tio",
+    "description": "Run any language on tio.run",
+    "version": "0.0.1",
+    "repository": "https://github.com/hyrious/tio",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "activationEvents": [
+        "onCommand:tio.run"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "tio.run",
+                "title": "Tio: Run"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/got": "^9.6.11",
+        "@types/vscode": "^1.46.0"
+    },
+    "dependencies": {
+        "got": "^11.3.0"
+    }
+}
