@@ -1,14 +1,20 @@
 {
     "name": "tio",
+    "displayName": "Tio",
     "description": "Run any language on tio.run",
+    "icon": "icon.png",
     "publisher": "hyrious",
-    "version": "0.0.1",
-    "repository": "https://github.com/hyrious/tio",
+    "version": "0.0.2",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hyrious/tio.git"
+    },
     "engines": {
         "vscode": "^1.46.0"
     },
     "activationEvents": [
-        "onCommand:tio.run"
+        "onCommand:tio.run",
+        "onCommand:tio.run2"
     ],
     "main": "./extension.js",
     "contributes": {
@@ -16,6 +22,10 @@
             {
                 "command": "tio.run",
                 "title": "Tio: Run"
+            },
+            {
+                "command": "tio.run2",
+                "title": "Tio: Run with Input and Args"
             }
         ]
     },
