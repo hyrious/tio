@@ -4,7 +4,7 @@
     "description": "Run any language on tio.run",
     "icon": "icon.png",
     "publisher": "hyrious",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "repository": {
         "type": "git",
         "url": "https://github.com/hyrious/tio.git"
