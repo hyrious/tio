@@ -63,14 +63,17 @@ function activate(context) {
 
         const input = await vscode.window.showInputBox({ value: cachedInput, placeHolder: "Input" });
         if (input == null) return;
+        cachedInput = input;
 
         const args = await vscode.window.showInputBox({ value: cachedArgs, placeHolder: "Args" });
         if (args == null) return;
+        cachedArgs = args;
 
         let options = { input, args: args.split(/\s+/) };
         if (lang.startsWith('c-') || lang.startsWith('cpp-')) {
             const flags = await vscode.window.showInputBox({ value: cachedCflags, placeHolder: "CFLAGS" });
             if (flags == null) return;
+            cachedCflags = flags;
             options.flags = flags.split(/\s+/);
         }
 
