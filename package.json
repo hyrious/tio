@@ -1,6 +1,7 @@
 {
     "name": "tio",
     "description": "Run any language on tio.run",
+    "publisher": "hyrious",
     "version": "0.0.1",
     "repository": "https://github.com/hyrious/tio",
     "engines": {
